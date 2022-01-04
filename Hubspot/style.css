@@ -1,0 +1,174 @@
+body {
+  color: rgb(45, 62, 81);
+  background-color: rgb(232, 234, 235);
+}
+
+/* ! GENERAL RULES  */
+
+main {
+  padding-top: 71px;
+}
+
+.btn-orange {
+  background-color: rgb(243, 124, 81);
+  font-size: 14px;
+  color: white;
+  border: 1px solid rgb(243, 124, 81);
+}
+.ft-15 {
+  font-size: 15px;
+}
+.ft-12 {
+  font-size: 12px;
+}
+/* ! HEADER RULES  */
+
+.nav-item a {
+  color: black;
+}
+
+/* ! JUMBOTRON RULES  */
+
+.card-body a {
+  padding: 30px 0;
+}
+.card-body h1 {
+  color: rgb(45, 62, 81);
+}
+.img-card img {
+  font-size: 27px;
+}
+.under-link {
+  font-size: 14px;
+}
+
+/* ! BUSINESS  */
+
+.btn-orange.bg-white {
+  color: rgb(243, 124, 81);
+}
+
+/* ! CHOOSE PLAN  */
+.popular-features .bi-check-circle-fill {
+  color: rgb(243, 124, 81);
+}
+
+.immagin-card {
+  font-size: 50px;
+  padding: 8px;
+}
+
+.card {
+  max-height: 500px;
+  padding: 30px 20px;
+}
+.card-bottom p {
+  font-size: 15px;
+}
+
+.text {
+  line-height: 45px;
+}
+
+/* ! STATISTICS  */
+
+#statistics {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 158, 177),
+    rgb(0, 177, 156)
+  );
+}
+.value-stats {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* ! FOOTER  */
+
+footer {
+  background-color: #2d3e50;
+}
+.accordion-header button {
+  background-color: #2d3e50;
+  color: white;
+  border-bottom: 1px solid grey;
+}
+.accordion-button.collapsed::after {
+  filter: invert(1);
+  background-image: url("img/chevron-right.svg");
+}
+.accordion-button:focus {
+  border-color: grey;
+  box-shadow: 0 0 0 0;
+  background-color: #2d3e50;
+}
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: transparent;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("img/chevron-down.svg");
+  transform: rotate(0);
+  filter: invert(1);
+}
+.list-menu {
+  display: none;
+}
+.list-menu ul li a{
+  text-decoration: none;
+  color:rgb(196, 218, 240);
+  font-size: 11px;
+}
+.list-menu ul{
+  list-style-type: none;
+}
+.fab {
+  color: rgb(196, 218, 240);
+  font-size: 25px;
+}
+
+.wrapper::before {
+  position: absolute;
+  top:50%;
+  left: 0;
+  content: '';
+  height: 2px;
+  width: 25%;
+  background-color: rgb(157, 206, 255);
+}
+.wrapper::after {
+  position: absolute;
+  top:50%;
+  right: 0;
+  content: '';
+  height: 2px;
+  width: 25%;
+  background-color: rgb(157, 206, 255);
+}
+
+.download-app img{
+  width: 46%;
+}
+
+/* ! MEDIA QUERY  */
+
+@media screen and (max-width: 576px) {
+  #statistics [class^="col"] {
+    border: 0 !important;
+  }
+}
+@media screen and (min-width: 576px) {
+  #statistics [class^="col"] {
+    border-width: 1px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .curtain-menu {
+    display: none;
+  }
+  .list-menu {
+    display: block;
+  }
+}
